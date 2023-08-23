@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accommodation Request Form</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <form id="submissionForm">
+        <h3>Identification Information:</h3>
+        Name: <input type="text" name="name" id="name"><br>
+        ID: <input type="text" name="employee_id" id="employee_id"><br>
+        Department: <input type="text" name="department" id="department"><br>
+        Employment Status: 
+        <select name="employment_status" id="employment_status">
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="contract">Contract</option>
+        </select><br>
+        Email: <input type="email" name="email" id="email"><br>
+
+        <!-- ... [other parts of the form] -->
+
+<h3>Accommodation Requests:</h3>
+<textarea name="accommodation_request" id="accommodation_request" rows="5" cols="50"></textarea><br>
+
+<!-- <h3>Upload Documentation:</h3>
+<input type="file" name="documentation" id="documentation"><br> -->
+
+<input type="button" value="Submit Request" onclick="submitForm()">
+
+    </form>
+
+<h3>Fetch Data by Name or ID:</h3>
+Name: <input type="text" id="fetchName">
+ID: <input type="text" id="fetchID">
+<input type="button" value="Fetch Data" onclick="fetchData()">
+
+<div id="displayArea"></div>
+
+
+</body>
+</html>
